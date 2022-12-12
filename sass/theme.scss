@@ -1,0 +1,88 @@
+// custom variables
+$primary: #FD7575;
+$secondary: #FFFFFF;
+$success: #F4F6F5;
+$warning: #E6EBE9;
+
+$btn-link-color: #FFFFFF;
+$btn-link-hover-color: #000;
+
+
+$navbar-light-color: $primary;
+$navbar-light-hover-color: #876585;
+$navbar-light-active-color: #876585;
+
+$btn-border-radius: 4px;
+$btn-font-weight: 600;
+
+$h1-font-size: 64px;   
+$h2-font-size: 38px;   
+$h3-font-size: 20px;
+
+
+
+// import the function & variables
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+// @import "../node_modules/bootstrap/scss/_utilities";
+
+$custome-theme-colors:(
+    "altdark": #373737,
+    "altpink": #FD7575,
+    "altgray": #E6EBE9,
+    "altinfo": #9B9798,
+);
+
+$themes: (
+  light: (
+    bodyBackground: #FFFFFF,
+    textColor: #242C2C,
+    cardBg: #FFFFFF,
+    cardBgHover: #d5dbdb,
+    containerBgColor: #F4F6F5,
+  ),
+  dark: (
+    bodyBackground: #262626,
+    textColor: #A5C9CA,
+    cardBg: #423F3E,
+    cardBgHover: rgba(0,0,0,8),
+    linkColor: #FFFFFF,
+    containerBgColor: #1a1b1b,
+  ),
+);
+
+// Themify for themes
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key); 
+}
+
+
+
+
+
+
+$theme-colors: map-merge($custome-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';

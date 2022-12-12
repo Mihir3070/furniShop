@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Furni Shop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Meta descriptions may be included in search results to concisely summarize page content.">
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!-------------------- Wrapper start -------------------->
+    <div class="wrapper">
+        <!-- header start -->
+        <header class="header bg-white">
+            <div class="search-overlay"></div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+                    <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <img src="images/menu-ic.svg" alt="Icon">
+                        <img src="images/menu-white-ic.svg" alt="Icon" class="dark-active-icon">
+                    </button>
+                    <a class="logo text-primary" href="#" title="furni.shop">furni.shop</a>
+                    <div class="offcanvas offcanvas-start right-lower" id="offcanvasWithBothOptions"
+                        aria-labelledby="offcanvasWithBothOptions">
+                        <div class="offcanvas-header">
+                            <a class="logo text-primary" href="#" title="furni.shop">furni.shop</a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#hero" title="Home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#aboutUs" title="About">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#features"
+                                        title="Features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#footer" title="Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="searchbar bg-primary">
+                        <input type="search" class="form-control" placeholder="Search here...">
+                    </div>
+                    <button type="button" class="btn search-toggler" title="Search"><img src="images/search-ic.svg"
+                            alt="Icon">
+                    </button>
+                    <button type="button" class="btn theme-wrapper" title="Toggle Theme" id="themeToggler">
+                        <img src="images/light-mode-ic.svg" alt="Icon" id="themeTogglerIcon">
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- header end -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- main-content start -->
+                <div class="main-content" data-bs-spy="scroll" data-bs-target="#navbar">
+                    <!-- hero start -->
+                    <div class="hero" id="hero">
+                        <h1 class="text-white">We Help You <br> Make <span class="ml2">Modern Interior</span></h1>
+                        <h5 class="text-white">We will help you to make an elegant and luxurious interior
+                            designed by professional interior designer.</h5>
+                    </div>
+                    <!-- hero end -->
+
+                    <!-- hot deals start -->
+                    <div class="hot-deals">
+                        <div class="container">
+                            <h2 class="title text-primary">Hot deals for you</h2>
+                            <h5 class="title-info text-altinfo">Online shoping for retail sales direct to consumers
+                                Online shoping
+                                for retail sales direct to consumers</h5>
+                            <div class="row gy-3">
+                                <div class="col-lg-4 col-sm-6 gsap-animation">
+                                    <div class="card">
+                                        <div class="img-wrapper d-flex align-items-center justify-content-center">
+                                            <img src="images/card-deal-ic.svg" alt="Icon">
+                                            <img src="images/card-deal-white-ic.svg" alt="Icon"
+                                                class="dark-active-icon">
+                                        </div>
+                                        <h5 class="card-title text-altdark">1.5% cashback</h5>
+                                        <p class="card-info text-altinfo">Online shoping for retail <br>
+                                            sales direct to <br>
+                                            consumers</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 gsap-animation">
+                                    <div class="card">
+                                        <div class="img-wrapper d-flex align-items-center justify-content-center">
+                                            <img src="images/card-deal-ic.svg" alt="Icon">
+                                            <img src="images/card-deal-white-ic.svg" alt="Icon"
+                                                class="dark-active-icon">
+                                        </div>
+                                        <h5 class="card-title text-altdark">30-day terms</h5>
+                                        <p class="card-info text-altinfo">Online shoping for retail <br>
+                                            sales direct to <br>
+                                            consumers</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 gsap-animation">
+                                    <div class="card">
+                                        <div class="img-wrapper d-flex align-items-center justify-content-center">
+                                            <img src="images/card-deal-ic.svg" alt="Icon">
+                                            <img src="images/card-deal-white-ic.svg" alt="Icon"
+                                                class="dark-active-icon">
+                                        </div>
+                                        <h5 class="card-title text-altdark">Save Money</h5>
+                                        <p class="card-info text-altinfo">Online shoping for retail <br>
+                                            sales direct to <br>
+                                            consumers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hot deals end -->
+
+                    <!-- about-us start -->
+                    <div class="about-us" id="aboutUs">
+                        <div class="container">
+                            <h2 class="title text-primary">About Us</h2>
+                            <h5 class="title-info text-altinfo">Online shoping for retail sales direct to consumers
+                                Online shoping
+                                for retail sales direct to consumers</h5>
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <div class="img-block">
+                                        <img src="images/table-chair-group.png" alt="Image">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="cards-group">
+                                        <div class="card">
+                                            <h3 class="card-title text-altdark">Who We Are</h3>
+                                            <p class="card-info">Online shoping for retail sales direct to consumers</p>
+                                        </div>
+                                        <div class="card ml-auto">
+                                            <h3 class="card-title text-altdark">Who We Are</h3>
+                                            <p class="card-info">Online shoping for retail sales direct to consumers</p>
+                                        </div>
+                                        <div class="card">
+                                            <h3 class="card-title text-altdark">Who We Are</h3>
+                                            <p class="card-info">Online shoping for retail sales direct to consumers</p>
+                                        </div>
+                                        <div class="card ml-auto">
+                                            <h3 class="card-title text-altdark">Who We Are</h3>
+                                            <p class="card-info">Online shoping for retail sales direct to consumers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" title="Learn more">Learn more</button>
+                        </div>
+                    </div>
+                    <!-- about-us end -->
+
+                    <!-- other company start -->
+                    <div class="other-company" id="features">
+                        <div class="container">
+                            <h2 class="title text-primary">Trusted By Over 1K + Companies</h2>
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/microsoft-ic.svg" alt="Icon" title="Microsoft"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/entpreneur-ic.png" alt="Icon"
+                                                title="Entpreneur"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/hp-ic.svg" alt="Icon" title="Hp"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/intel-ic.svg" alt="Icon" title="Intel"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/dell-ic.svg" alt="Icon" title="Dell"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <a href="#"><img src="images/mashable-ic.svg" alt="Icon" title="Mashable"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- other company end -->
+
+                    <!-- product start -->
+                    <div class="product">
+                        <div class="container">
+                            <h2 class="title text-primary">Products</h2>
+                            <div class="outer">
+                                <div class="menu-outer">
+                                    <ul class="filter-menu">
+                                        <li data-target="all" class="btn btn-warning current">All</li>
+                                        <li data-target="bad" class="btn btn-warning">Bad</li>
+                                        <li data-target="sofa" class="btn btn-warning">Sofa</li>
+                                        <li data-target="chair" class="btn btn-warning">Chair</li>
+                                        <li data-target="light" class="btn btn-warning">Light</li>
+                                    </ul>
+                                    <a href="#" class="text-altdark">See All <span><img src="images/right-arrow-ic.svg"
+                                                alt="Icon"></span></a>
+                                </div>
+
+                                <ul class="filter-item">
+                                    <li data-item="chair">
+                                        <div>
+                                            <img src="images/chair1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="light">
+                                        <div>
+                                            <img src="images/lamp1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="sofa">
+                                        <div>
+                                            <img src="images/sofa-chair1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="sofa">
+                                        <div>
+                                            <img src="images/sofa-chair1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="chair">
+                                        <div>
+                                            <img src="images/chair1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="light">
+                                        <div>
+                                            <img src="images/lamp1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="sofa">
+                                        <div>
+                                            <img src="images/sofa-chair1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-item="light">
+                                        <div>
+                                            <img src="images/lamp1.svg" alt="Image" class="product-img">
+                                            <h4 class="text-altdark">Vintage Chair</h4>
+                                            <div class="pricing">
+                                                <div>
+                                                    <span class="current-price text-altdark">$35.00</span>
+                                                    <span class="previous-price">$55.00</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary rounded-circle"><img
+                                                        src="images/cart-ic.svg" alt="Icon"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product end -->
+
+                    <!-- testimonials start -->
+                    <div class="testimonials">
+                        <div class="container">
+                            <h2 class="title text-primary">What Are Happy Client Says</h2>
+                            <h5 class="title-info text-altinfo">Online shoping for retail sales direct to consumers
+                                Online shoping
+                                for retail sales direct to consumers</h5>
+
+                            <div class="slider-test">
+
+                                <div class="card">
+                                    <img src="images/profile2.png" alt="Image" class="profile rounded-circle">
+                                    <h4 class="name text-black">Larry Diamond</h4>
+                                    <h6 class="position">Chief Executive Officer</h6>
+                                    <p class="feedback text-altdark">
+                                        File storage made easy - including <br>
+                                        powerful features you won’t find anywhere else. Whether you’re.
+                                    </p>
+                                </div>
+
+                                <div class="card">
+                                    <img src="images/profile2.png" alt="Image" class="profile rounded-circle">
+                                    <h4 class="name text-black">Larry Diamond</h4>
+                                    <h6 class="position">Chief Executive Officer</h6>
+                                    <p class="feedback text-altdark">
+                                        File storage made easy - including <br>
+                                        powerful features you won’t find anywhere else. Whether you’re.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonials start -->
+                </div>
+                <!-- main-content end -->
+
+                <!-- footer start -->
+                <footer class="footer bg-primary" id="footer">
+                    <div class="container">
+                        <div class="details gsap-animation">
+                            <a href="#" class="logo text-white" title="Furni Shop">furni.shop</a>
+                            <p class="text-white">Optix seamlessly connects your members with the community, resources.
+                            </p>
+                            <div class="social">
+                                <a href="#" class="btn btn-primary"><img src="images/facebook-ic.svg" alt="Facebook"
+                                        title="Facebook"></a>
+                                <a href="#" class="btn btn-primary"><img src="images/twitter-ic.svg" alt="Twitter"
+                                        title="Twitter"></a>
+                                <a href="#" class="btn btn-primary"><img src="images/linkdn-ic.svg" alt="Linkdn"
+                                        title="Linkdn"></a>
+                                <a href="#" class="btn btn-primary"><img src="images/pintrest-ic.svg" alt="Pinterest"
+                                        title="Pinterest"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row other-links">
+                            <div class="col-lg-4 order-lg-last">
+                                <div class="kikstart gsap-animation">
+                                    <h4 class="text-white">Start your business today for
+                                        $0+ state fees.</h4>
+                                    <div class="btns-group">
+                                        <button type="button" class="btn btn-success">Get Started</button>
+                                        <button type="button" class="btn btn-secondary">Contact Sales</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <div class="gsap-animation">
+                                    <h5 class="footer-subtitle text-white">Entity types</h5>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <div class="gsap-animation">
+                                    <h5 class="footer-subtitle text-white">Services</h5>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <div class="gsap-animation">
+                                    <h5 class="footer-subtitle text-white">Resources</h5>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <div class="gsap-animation">
+                                    <h5 class="footer-subtitle text-white">Support</h5>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                    <a href="#" title="Security" class="btn btn-link">Security</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+        <!-- footer end -->
+
+    </div>
+    <!-- JavaScripts -->
+    <script src="js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src='https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.11.3'></script>
+    <script src='js/ScrollSmoother.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script>
+
+    <script>
+        $('.slider-test').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slideToScroll: 1,
+            autoplaySpeed: 2000,
+            autoplay: false,
+            prevArrow: '<button class="slick-prev btn btn-success" type="button"></button>',
+            nextArrow: '<button class="slick-next btn btn-success" type="button"></button>',
+        });
+
+        // gsap.registerPlugin(ScrollTrigger);
+
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+        let smoother = ScrollSmoother.create({
+            wrapper: '#smooth-wrapper',
+            content: '#smooth-content',
+            smooth: 2,
+            smoothTouch: 0.1,
+            effects: true,
+        });
+        smoother.effects('.img-block img', {
+            speed: 0.5,
+            lag: (i) => i * 1,
+        })
+
+        const navLinkAnimation = gsap.timeline();
+        navLinkAnimation.staggerFrom(".header .navbar-nav .nav-link", 1, {
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+        }, 0.2);
+        navLinkAnimation.from(".header .search-toggler", 0.8, {
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+        });
+
+        const heroAnimation = gsap.timeline();
+        heroAnimation.from(".hero h1", 1.2, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        });
+        heroAnimation.from(".hero h5", 1, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        });
+
+        const t1 = gsap.timeline({
+            scrollTrigger: ".hot-deals .row",
+            opacity: 0,
+            start: "center center",
+            end: "+=500",
+        });
+        t1.staggerFrom(".hot-deals .gsap-animation", 0.8, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.5);
+
+        const t2 = gsap.timeline({
+            scrollTrigger: ".about-us",
+            opacity: 0,
+            start: "center center",
+            end: "+=300",
+        });
+        t2.from(".about-us .img-block", 0.8, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        });
+        t2.staggerFrom(".about-us .card h3", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.2);
+        t2.staggerFrom(".about-us .card p", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.2);
+        t2.from(".about-us .btn", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        });
+
+        const t3 = gsap.timeline({
+            scrollTrigger: ".other-company",
+            opacity: 0,
+            start: "center center",
+            end: "+=300",
+        });
+        t3.staggerFrom(".other-company .card", 0.8, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.4);
+
+        const t4 = gsap.timeline({
+            scrollTrigger: ".product",
+            opacity: 0,
+            start: "center center",
+            end: "+=700",
+        });
+        t4.staggerFrom(".product .filter-item h4", 1, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+            delay: 0.5,
+        }, 0.4);
+        t4.from(".product .filter-item .current-price", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        });
+        t4.from(".product .filter-item .previous-price", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        });
+
+        const t5 = gsap.timeline({
+            scrollTrigger: ".testimonials",
+            opacity: 0,
+            start: "center center",
+            end: "+=700",
+        });
+        t5.from(".testimonials .card", 0.8, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.8);
+
+        const t6 = gsap.timeline({
+            scrollTrigger: ".footer .row",
+            opacity: 0,
+            start: "center center",
+            end: "+=400",
+        });
+        t6.staggerFrom(".footer .gsap-animation", 0.5, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.Power2,
+        }, 0.3);
+
+        //responsive sidebar --> nav-link animation
+        // var responsiveNavLink = gsap.timeline({ paused: true });
+
+        // var myId = document.getElementById('navbarToggler');
+
+        // myId.addEventListener('click', () => { this.responsiveNavLink.play(); });
+
+        // responsiveNavLink.staggerFrom(".header .navbar-nav .nav-link", 1.5, {
+        //     opacity: 0,
+        //     y: -40,
+        //     ease: Expo.easeInOut
+        // }, 0.2);
+
+        // const myOffcanvas = document.getElementById('offcanvasWithBothOptions')
+        // myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
+        //     responsiveNavLink.revert();
+        // });
+
+        // const myOffcanvasBtn = document.getElementsByClassName('btn-close')
+        // myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
+        //     responsiveNavLink.revert();
+        // })
+
+
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+</body>
+
+</html>
